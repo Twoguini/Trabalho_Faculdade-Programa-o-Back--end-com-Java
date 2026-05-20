@@ -50,5 +50,6 @@ public class PessoaFisicaRepo {
         ObjectInputStream in = new ObjectInputStream(new FileInputStream(arquivo));
         list = (ArrayList<PessoaFisica>) in.readObject();
         in.close();
+        System.out.printf("Dados de Pessoa Fisica Recuperados%n");
     }
 }

@@ -21,7 +21,7 @@ public class PessoaFisica extends Pessoa implements Serializable {
     
     @Override
     public void show() {
-        System.out.printf("Pessoa Física: %nId: %d - Name: %s%nCpf: %s - Age: %d", getId(), getName(), this.cpf, this.age);
+        System.out.printf("Pessoa Fisica: %nId: %d %nName: %s%nCpf: %s %nAge: %d%n", getId(), getName(), this.cpf, this.age);
     }
     
     public int getAge() { return this.age; } 

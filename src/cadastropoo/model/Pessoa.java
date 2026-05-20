@@ -13,13 +13,13 @@ public class Pessoa implements Serializable {
     private int id;
     private String name; 
     
-    public Pessoa(int lastUsedId, String name) {
-        this.id = lastUsedId + 1;
+    public Pessoa(int id, String name) {
+        this.id = id;
         this.name = name;
     }
     
     public void show() {
-        System.out.printf("Id: %d - Name: %s", id, name);
+        System.out.printf("Id: %d %nName: %s%n", id, name);
     }
     
     public int getId() { return this.id; } 

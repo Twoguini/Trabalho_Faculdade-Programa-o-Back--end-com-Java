@@ -5,6 +5,7 @@
 package cadastropoo.model;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Locale;
 
 /**
  *
@@ -50,5 +51,6 @@ public class PessoaJuridicaRepo {
         ObjectInputStream in = new ObjectInputStream(new FileInputStream(arquivo));
         list = (ArrayList<PessoaJuridica>) in.readObject();
         in.close();
+        System.out.printf("Dados de Pessoa Juridica Recuperados%n");
     }
 }
